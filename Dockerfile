@@ -1,7 +1,5 @@
-FROM debian:buster
+FROM python:3.9.0-buster
 
-ARG VCS_REF
-ARG BUILD_DATE
 ENV KUSTOMIZE_VER 3.8.2
 ENV KUBECTL_VER 1.19.3
 
@@ -11,12 +9,6 @@ LABEL org.label-schema.vcs-ref=$VCS_REF \
       org.label-schema.vcs-url="https://github.com/subhakarkotta-ci-cd/docker-python-kubectl-kustomize" \
       org.label-schema.build-date=$BUILD_DATE
 
-
-RUN apt-get update
-RUN apt-get install --yes curl
-RUN apt-get install --yes python3 python3-nbformat python3-nbconvert python3-ipykernel
-RUN apt-get install --yes python3-requests python3-xmltodict python3-yaml
-RUN apt-get install --yes jupyter-core jupyter-nbconvert
 
 RUN apt-get install --yes git vim nano
 
