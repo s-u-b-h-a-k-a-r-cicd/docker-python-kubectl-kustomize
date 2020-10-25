@@ -1,4 +1,3 @@
-  
 FROM debian:buster
 
 ARG VCS_REF
