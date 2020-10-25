@@ -8,7 +8,7 @@ ENV KUBECTL_VER 1.19.3
 LABEL org.label-schema.vcs-ref=$VCS_REF \
       org.label-schema.name="python-kubectl-kustomize" \
       org.label-schema.url="https://hub.docker.com/r/subhakarkotta/python-kubectl-kustomize/" \
-      org.label-schema.vcs-url="https://github.com/subhakarkotta/docker-python-kubectl-kustomize" \
+      org.label-schema.vcs-url="https://github.com/subhakarkotta-ci-cd/docker-python-kubectl-kustomize" \
       org.label-schema.build-date=$BUILD_DATE
 
 
